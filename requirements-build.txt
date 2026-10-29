@@ -1,0 +1,3 @@
+# Build-time only (not needed on the staff machine): packages negative_screening.py into
+# NegativeScreening.exe. Used by build_exe.bat.
+pyinstaller>=6.0

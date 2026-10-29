@@ -1,0 +1,21 @@
+# Generated at run time — never committed (they hold screening results and logs)
+data/
+reports/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local environment (run_weekly.bat uses .venv; secrets stay in environment variables)
+.venv/
+.env
+
+# Written per machine by --write-scheduler-files (holds this machine's Python path)
+run_weekly.bat
+
+# Build output (build_exe.bat): the exe is built per release, never committed
+build/
+dist/
+NegativeScreening.exe
+*.spec

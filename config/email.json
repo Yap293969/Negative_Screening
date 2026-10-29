@@ -1,0 +1,21 @@
+{
+  "note": "No passwords here. They are saved in the app's Setup (Windows Credential Manager) or set as NS_SMTP_PASSWORD / NS_IMAP_PASSWORD environment variables.",
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "starttls": true,
+    "username": "operator@example.com"
+  },
+  "sender": "operator@example.com",
+  "recipients": [
+    "operator@example.com"
+  ],
+  "subject_template": "[Negative Screening] {period} — {critical} critical, {review} for review{failed_suffix}",
+  "alerts_mailbox": {
+    "imap_host": "imap.gmail.com",
+    "imap_port": 993,
+    "username": "operator@example.com",
+    "label": "NS-Alerts",
+    "sender_filter": "googlealerts-noreply@google.com"
+  }
+}

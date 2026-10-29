@@ -1,0 +1,458 @@
+{
+  "version": "2026-10-05",
+  "note": "Client-supplied dictionary, spelling corrected ('rrested' -> 'arrested'). Only Sanctions/Regulatory priority was set by the client; others are proposed defaults pending confirmation (PROJECT_STATE O-3). Chinese forms (Simplified and Traditional) are each keyword's 'variants' (owner, 5 Oct 2026, D-28).",
+  "categories": [
+    {
+      "id": "financial_crime",
+      "name": "Financial Crime",
+      "priority": "HIGH",
+      "client_confirmed": false,
+      "keywords": [
+        {
+          "term": "money laundering",
+          "ambiguous": false,
+          "variants": [
+            "洗钱",
+            "洗錢"
+          ]
+        },
+        {
+          "term": "aml",
+          "ambiguous": true
+        },
+        {
+          "term": "ctf",
+          "ambiguous": true
+        },
+        {
+          "term": "fraud",
+          "ambiguous": false,
+          "variants": [
+            "诈骗",
+            "欺诈",
+            "詐騙",
+            "欺詐"
+          ]
+        },
+        {
+          "term": "embezzlement",
+          "ambiguous": false,
+          "variants": [
+            "侵吞",
+            "挪用公款"
+          ]
+        },
+        {
+          "term": "tax evasion",
+          "ambiguous": false,
+          "variants": [
+            "逃税",
+            "逃稅"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bribery_corruption",
+      "name": "Bribery / Corruption",
+      "priority": "HIGH",
+      "client_confirmed": false,
+      "keywords": [
+        {
+          "term": "bribery",
+          "ambiguous": false,
+          "variants": [
+            "贿赂",
+            "受贿",
+            "行贿",
+            "賄賂",
+            "受賄",
+            "行賄"
+          ]
+        },
+        {
+          "term": "corruption",
+          "ambiguous": false,
+          "variants": [
+            "贪污",
+            "腐败",
+            "貪污",
+            "貪汙",
+            "腐敗"
+          ]
+        },
+        {
+          "term": "kickback",
+          "ambiguous": false,
+          "variants": [
+            "回扣"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "market_misconduct",
+      "name": "Market Misconduct",
+      "priority": "HIGH",
+      "client_confirmed": false,
+      "keywords": [
+        {
+          "term": "insider trading",
+          "ambiguous": false,
+          "variants": [
+            "内幕交易",
+            "內幕交易"
+          ]
+        },
+        {
+          "term": "market manipulation",
+          "ambiguous": false,
+          "variants": [
+            "操纵市场",
+            "操纵股价",
+            "操縱市場",
+            "操縱股價"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "investment_schemes",
+      "name": "Investment Schemes",
+      "priority": "HIGH",
+      "client_confirmed": false,
+      "keywords": [
+        {
+          "term": "ponzi",
+          "ambiguous": false,
+          "variants": [
+            "庞氏骗局",
+            "龐氏騙局"
+          ]
+        },
+        {
+          "term": "pyramid scheme",
+          "ambiguous": false,
+          "variants": [
+            "金字塔计划",
+            "传销",
+            "金字塔計劃",
+            "傳銷"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forgery_counterfeit",
+      "name": "Forgery / Counterfeit",
+      "priority": "HIGH",
+      "client_confirmed": false,
+      "keywords": [
+        {
+          "term": "forgery",
+          "ambiguous": false,
+          "variants": [
+            "伪造",
+            "偽造"
+          ]
+        },
+        {
+          "term": "counterfeit",
+          "ambiguous": false,
+          "variants": [
+            "假冒"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corporate_misconduct",
+      "name": "Corporate / Financial Misconduct",
+      "priority": "HIGH",
+      "client_confirmed": false,
+      "keywords": [
+        {
+          "term": "structuring",
+          "ambiguous": true
+        },
+        {
+          "term": "shell company",
+          "ambiguous": false,
+          "variants": [
+            "空壳公司",
+            "空殼公司"
+          ]
+        },
+        {
+          "term": "misappropriation",
+          "ambiguous": false,
+          "variants": [
+            "挪用",
+            "盗用",
+            "盜用"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sanctions_regulatory",
+      "name": "Sanctions / Regulatory Enforcement",
+      "priority": "CRITICAL",
+      "client_confirmed": true,
+      "keywords": [
+        {
+          "term": "sanctions",
+          "ambiguous": true,
+          "variants": [
+            "制裁"
+          ]
+        },
+        {
+          "term": "ofac",
+          "ambiguous": false
+        },
+        {
+          "term": "enforcement action",
+          "ambiguous": false,
+          "variants": [
+            "执法行动",
+            "執法行動"
+          ]
+        },
+        {
+          "term": "regulatory penalty",
+          "ambiguous": false,
+          "variants": [
+            "监管处罚",
+            "監管處罰"
+          ]
+        },
+        {
+          "term": "indictment",
+          "ambiguous": false
+        },
+        {
+          "term": "prosecution",
+          "ambiguous": false,
+          "variants": [
+            "起诉",
+            "起訴"
+          ]
+        },
+        {
+          "term": "subpoena",
+          "ambiguous": false,
+          "variants": [
+            "传票",
+            "傳票"
+          ]
+        },
+        {
+          "term": "blacklisted",
+          "ambiguous": false,
+          "variants": [
+            "黑名单",
+            "黑名單"
+          ]
+        },
+        {
+          "term": "debarred",
+          "ambiguous": false
+        },
+        {
+          "term": "asset freeze",
+          "ambiguous": false,
+          "variants": [
+            "冻结资产",
+            "凍結資產"
+          ]
+        },
+        {
+          "term": "cease and desist",
+          "ambiguous": false,
+          "variants": [
+            "停止令"
+          ]
+        },
+        {
+          "term": "seizure",
+          "ambiguous": true,
+          "variants": [
+            "查封",
+            "扣押"
+          ]
+        },
+        {
+          "term": "fined",
+          "ambiguous": true,
+          "variants": [
+            "罚款",
+            "罰款"
+          ]
+        },
+        {
+          "term": "banned",
+          "ambiguous": true,
+          "variants": [
+            "被禁"
+          ]
+        },
+        {
+          "term": "disqualified",
+          "ambiguous": false,
+          "variants": [
+            "取消资格",
+            "取消資格"
+          ]
+        },
+        {
+          "term": "arrested",
+          "ambiguous": false,
+          "variants": [
+            "被捕"
+          ]
+        },
+        {
+          "term": "charged",
+          "ambiguous": true,
+          "variants": [
+            "被控"
+          ]
+        },
+        {
+          "term": "convicted",
+          "ambiguous": false,
+          "variants": [
+            "定罪"
+          ]
+        },
+        {
+          "term": "guilty",
+          "ambiguous": true,
+          "variants": [
+            "有罪"
+          ]
+        },
+        {
+          "term": "sentenced",
+          "ambiguous": false,
+          "variants": [
+            "判刑",
+            "判处",
+            "判處"
+          ]
+        },
+        {
+          "term": "fugitive",
+          "ambiguous": false
+        },
+        {
+          "term": "wanted by",
+          "ambiguous": true
+        },
+        {
+          "term": "extradition",
+          "ambiguous": false
+        }
+      ]
+    },
+    {
+      "id": "financial_distress",
+      "name": "Financial Distress",
+      "priority": "HIGH",
+      "client_confirmed": false,
+      "keywords": [
+        {
+          "term": "bankrupt",
+          "ambiguous": false,
+          "variants": [
+            "破产",
+            "破產"
+          ]
+        },
+        {
+          "term": "insolvent",
+          "ambiguous": false,
+          "variants": [
+            "无力偿债",
+            "無力償債"
+          ]
+        },
+        {
+          "term": "receivership",
+          "ambiguous": false
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "priority": "MEDIUM",
+      "client_confirmed": false,
+      "keywords": [
+        {
+          "term": "data breach",
+          "ambiguous": false,
+          "variants": [
+            "数据泄露",
+            "數據泄露",
+            "數據洩露",
+            "資料外洩"
+          ]
+        },
+        {
+          "term": "cyber attack",
+          "ambiguous": false,
+          "variants": [
+            "网络攻击",
+            "網絡攻擊",
+            "網路攻擊"
+          ]
+        },
+        {
+          "term": "cybercrime",
+          "ambiguous": false,
+          "variants": [
+            "网络犯罪",
+            "網絡犯罪",
+            "網路犯罪"
+          ]
+        },
+        {
+          "term": "hacking",
+          "ambiguous": true,
+          "variants": [
+            "黑客",
+            "駭客"
+          ]
+        },
+        {
+          "term": "ransomware",
+          "ambiguous": false,
+          "variants": [
+            "勒索软件",
+            "勒索軟件",
+            "勒索軟體"
+          ]
+        },
+        {
+          "term": "identity theft",
+          "ambiguous": false,
+          "variants": [
+            "身份盗窃",
+            "身份盜竊"
+          ]
+        },
+        {
+          "term": "phishing",
+          "ambiguous": true,
+          "variants": [
+            "网络钓鱼",
+            "網絡釣魚",
+            "網路釣魚"
+          ]
+        }
+      ]
+    }
+  ]
+}

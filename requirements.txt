@@ -1,0 +1,4 @@
+# Only packages the program actually imports. Everything else uses the Python standard library.
+requests>=2.31        # polite HTTP for the Company website, SC Malaysia and public web result pages
+tzdata>=2024.1        # Asia/Kuala_Lumpur time-zone data for zoneinfo on Windows
+openpyxl>=3.1         # the weekly Excel report (S18)

@@ -1,0 +1,80 @@
+{
+  "version": "2026-10-05",
+  "note": "Only client-approved names. Add new aliases/personnel only after approval (PROJECT_STATE O-1). Exact full names only (owner, 5 Oct 2026, D-27): no single word of a name is screened. The only ambiguous terms are the founder's Chinese name (a common name): they count only when the same item also names the company or the founder (D-29).",
+  "entities": [
+    {
+      "id": "acme_company",
+      "type": "company",
+      "display_name": "Acme Asset Management Sdn Bhd",
+      "names": [
+        "Acme Asset Management Sdn Bhd",
+        "Acme Asset Management"
+      ],
+      "variants": [
+        "Acme Asset Management Sdn. Bhd."
+      ],
+      "aliases": [
+        "艾克米投资管理",
+        "艾克米投資管理"
+      ],
+      "ambiguous_terms": [],
+      "alert_names": [
+        "Acme Asset Management Sdn Bhd",
+        "Acme Asset Management",
+        "艾克米投资管理",
+        "艾克米投資管理"
+      ],
+      "approved": true
+    },
+    {
+      "id": "tan_ah_kow",
+      "type": "person",
+      "display_name": "Tan Ah Kow",
+      "role": "Founder",
+      "names": [
+        "Tan Ah Kow"
+      ],
+      "variants": [
+        "Ah Kow Tan"
+      ],
+      "aliases": [],
+      "ambiguous_terms": [
+        {
+          "term": "陈亚九",
+          "requires_any_context": [
+            "Acme Asset Management",
+            "艾克米投资管理",
+            "艾克米投資管理",
+            "Tan Ah Kow",
+            "Ah Kow Tan"
+          ],
+          "context_window_words": 1000000
+        },
+        {
+          "term": "陳亞九",
+          "requires_any_context": [
+            "Acme Asset Management",
+            "艾克米投资管理",
+            "艾克米投資管理",
+            "Tan Ah Kow",
+            "Ah Kow Tan"
+          ],
+          "context_window_words": 1000000
+        }
+      ],
+      "alert_names": [
+        "Tan Ah Kow"
+      ],
+      "approved": true
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "tan_ah_kow",
+      "type": "associated_with",
+      "label": "Founder of",
+      "object": "acme_company",
+      "approved": true
+    }
+  ]
+}

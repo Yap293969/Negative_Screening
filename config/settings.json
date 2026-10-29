@@ -1,0 +1,61 @@
+{
+  "timezone": "Asia/Kuala_Lumpur",
+  "paths": {
+    "data_dir": "data",
+    "reports_dir": "C:/Negative_Screening_Reports",
+    "logs_dir": "logs",
+    "database": "data/screening.sqlite",
+    "dry_run_database": "data/screening_dryrun.sqlite",
+    "validation_database": "data/screening_validation.sqlite"
+  },
+  "sources": {
+    "google_alerts": {
+      "enabled": true,
+      "mode": "imap",
+      "rss_feeds": [],
+      "fetch_public_web_pages": true,
+      "note": "mode: imap (default) or rss (fallback). Facebook / Instagram / LinkedIn result pages are never fetched; other public web result pages may be fetched once, politely, to confirm names, keywords and dates."
+    },
+    "website": {
+      "enabled": true,
+      "base_url": "https://acme.example.com/",
+      "feed_url": "https://acme.example.com/feed/",
+      "comments_feed_url": "https://acme.example.com/comments/feed/",
+      "max_feed_pages": 5,
+      "api_endpoint": null,
+      "listing_pages": [],
+      "note": "Site inspected 29 Sep 2026 (WordPress): the RSS feed is used (SOURCE_ACCESS_BLUEPRINT §4, option 1); robots.txt allows it."
+    },
+    "sc_malaysia": {
+      "enabled": true,
+      "investor_alert_list_url": "https://www.sc.com.my/investor-alert-list",
+      "announcement_urls": [
+        "https://www.sc.com.my/resources/media/media-release"
+      ],
+      "fetch_announcement_pages": true,
+      "note": "Pages confirmed 29 Sep 2026 (robots.txt allows all). Both pages embed their full list as data, which is read instead of the HTML layout."
+    }
+  },
+  "http": {
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "backoff_seconds": 2,
+    "delay_between_requests_seconds": 2,
+    "user_agent": "NegativeScreeningPrototype/0.1 (+contact: configured operator)"
+  },
+  "screening": {
+    "keyword_name_window_words": 30,
+    "note": "Rule-based only: approved name + adverse keyword. NLP is excluded from this project by the owner's decision (29 Sep 2026)."
+  },
+  "report": {
+    "include_out_of_period_sheet": false
+  },
+  "email_defaults": {
+    "send_on_automatic": true,
+    "send_on_manual": true,
+    "manual_email_cooldown_minutes": 10
+  },
+  "run": {
+    "max_run_minutes": 120
+  }
+}
